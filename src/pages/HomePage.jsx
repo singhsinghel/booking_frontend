@@ -13,7 +13,13 @@ const HomePage = () => {
 
   return (
     <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">Available Tour Packages</h1>
+      <div className="heading flex  items-center justify-between">
+        <h1 className="text-3xl font-bold mb-6">Available Tour Packages</h1>
+
+        <button className="text-lg font-semibold border-2 p-1 rounded-md">
+          <Link to="/admin">Admin</Link>
+        </button>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {packages.map((pkg) => (
           <div
